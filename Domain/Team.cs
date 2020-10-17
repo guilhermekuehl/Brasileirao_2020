@@ -16,7 +16,7 @@ namespace Domain
         public int OwnGoals { get; set; } = 0;
         public int PercentageOfUse { get; set; } = 0;
 
-        public Teams(string name)
+        public Team(string name)
         {
             Name = name;
         }
