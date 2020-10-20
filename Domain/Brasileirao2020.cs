@@ -1,41 +1,26 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Domain
 {
     public class Brasileirao2020
     {
+        static void Main()
+        {
+        }
         private List<Team> _teams { get; set; }
         
         public IReadOnlyCollection<Team> Teams => _teams;
+        public List<Player> _player { get; set; }
 
         public Brasileirao2020()
         {
             _teams = new List<Team>();
+            _player = new List<Player>();
         }
 
-        public bool RegisterOfTeams(List<Team> teams, string password)
-        {
-            if (password == "CBF")
-            {
-                if (teams == null)
-                {
-                    return true;
-                }
-                _teams = teams;
-
-                return true;
-            }
-            
-            if (Teams.Count > 7)
-            {
-                return true;
-            }
-
-            return false;
-        }
-
-        public List<Domain.Team> RandomGeneratorTeams()
+        public List<Team> RandomGeneratorTeams()
         {
             
             Random randomize = new Random();
@@ -49,14 +34,17 @@ namespace Domain
             var saoPaulo = new Team("São Paulo");
 
             var teams = new List<Team>{palmeiras, flamengo, fluminense, corinthians, chapecoense, atleticoMG, vasco, saoPaulo};
+            var randomTeams = new List<Team>();
 
-            
-            while (teams.Count > 6)
+            for (int i = 0; teams.Count > 6; i++)
             {
-                var i = randomize.Next(0, teams.Count);
+                i = randomize.Next(0, teams.Count);
                 teams.RemoveAt(i);
             }
             return teams;
         }
+
+
+        
     }
 }

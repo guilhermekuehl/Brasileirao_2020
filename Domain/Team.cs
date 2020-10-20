@@ -4,7 +4,6 @@ namespace Domain
 {
     public class Team
     {
-        public Guid Id { get; set; } = Guid.NewGuid();
         public string Name { get; set; }
         public int Punctuation { get; set; } = 0;
         public int MatchesPlayed { get; set; } = 0;
