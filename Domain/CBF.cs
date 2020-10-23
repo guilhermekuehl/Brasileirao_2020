@@ -37,7 +37,7 @@ namespace Domain
 
         public void SetGoalsInRound(List<Team> randomTeams, int goalsfor)
         {
-           
+            
         }
 
     }
