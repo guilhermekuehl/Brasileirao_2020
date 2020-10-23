@@ -1,16 +1,16 @@
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Domain
 {
     public class CBF
     {
-        public List<Player> _players { get; set; }
-
-        public IReadOnlyCollection<Team> Teams => _teams;
+        
         private List<Team> _teams { get; set; }
+        public IReadOnlyCollection<Team> Teams => _teams;
+
         public CBF()
         {
-            _players = new List<Player>();
             _teams = new List<Team>();
 
         }
@@ -35,13 +35,9 @@ namespace Domain
             return false;
         }
 
-        public bool AddPlayers(List<Player> _players)
+        public void SetGoalsInRound(List<Team> randomTeams, int goalsfor)
         {
-            if (_players.Count >= 16 && _players.Count <= 32)
-            {
-                return true;
-            }
-            return false;
+           
         }
 
     }

@@ -10,28 +10,24 @@ namespace Domain
         {
         }
         private List<Team> _teams { get; set; }
-        
         public IReadOnlyCollection<Team> Teams => _teams;
-        public List<Player> _player { get; set; }
 
         public Brasileirao2020()
         {
             _teams = new List<Team>();
-            _player = new List<Player>();
         }
 
         public List<Team> RandomGeneratorTeams()
-        {
-            
+        {   
             Random randomize = new Random();
-            var palmeiras = new Team("Palmeiras");
-            var flamengo = new Team("Flamengo");
-            var fluminense = new Team("Fluminense");
-            var corinthians = new Team("Corinthians");
-            var chapecoense = new Team("Chapecoense");
-            var atleticoMG = new Team("Atlético - MG");
-            var vasco = new Team("Vasco");
-            var saoPaulo = new Team("São Paulo");
+            var palmeiras = new Team("Palmeiras", 0);
+            var flamengo = new Team("Flamengo", 0);
+            var fluminense = new Team("Fluminense", 0);
+            var corinthians = new Team("Corinthians", 0);
+            var chapecoense = new Team("Chapecoense", 0);
+            var atleticoMG = new Team("Atlético - MG", 0);
+            var vasco = new Team("Vasco", 0);
+            var saoPaulo = new Team("São Paulo", 0);
 
             var teams = new List<Team>{palmeiras, flamengo, fluminense, corinthians, chapecoense, atleticoMG, vasco, saoPaulo};
             var randomTeams = new List<Team>();
@@ -39,12 +35,12 @@ namespace Domain
             for (int i = 0; teams.Count > 6; i++)
             {
                 i = randomize.Next(0, teams.Count);
+                randomTeams.Add(teams.ElementAt(i));
                 teams.RemoveAt(i);
             }
-            return teams;
-        }
+            return randomTeams;
+        }    
 
-
-        
+            
     }
 }

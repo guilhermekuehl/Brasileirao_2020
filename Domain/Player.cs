@@ -1,16 +1,18 @@
+using System;
 using System.Collections.Generic;
 
 namespace Domain{
 
     public class Player
     {
-        
+        public Guid Id { get; set; } = Guid.NewGuid();
         public string Name { get; set; }
-        public int Goals { get; set; } = 0;
+        public int Goals { get; set; }
 
-        public Player(string name)
+        public Player(Guid id, string name, int goals)
         {
             Name = name;
+            Goals = goals;
         }
     }
-}
+}   
