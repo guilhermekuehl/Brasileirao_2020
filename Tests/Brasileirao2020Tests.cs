@@ -12,16 +12,16 @@ namespace Tests
        
        
        
-       [Fact]
-       public void Should_return_6_when_have_2_teams_in_conflit()
-       {
-          var brasileirao = new Brasileirao2020();
+      [Fact]
+      public void Should_return_6_when_have_2_teams_in_conflit()
+      {
+         var brasileirao = new Brasileirao2020();
+         var teams = new List<Team>{};
+         var randomized = brasileirao.RandomGeneratorTeams();
 
-          var teams = new List<Team>{};
+         Assert.Equal(2, randomized.Count);
+      }
 
-          var randomized = brasileirao.RandomGeneratorTeams();
 
-          Assert.Equal(6, randomized.Count);
-       }
     }
 }
