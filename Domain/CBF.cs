@@ -37,7 +37,11 @@ namespace Domain
 
         public void SetGoalsInRound(List<Team> randomTeams, int goalsfor)
         {
-            
+             
+            if (randomTeams.ElementAt(0).GoalsFor > randomTeams.ElementAt(1).GoalsFor)
+            {
+                
+            }
         }
 
     }

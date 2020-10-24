@@ -32,11 +32,19 @@ namespace Domain
             var teams = new List<Team>{palmeiras, flamengo, fluminense, corinthians, chapecoense, atleticoMG, vasco, saoPaulo};
             var randomTeams = new List<Team>();
 
+            var goal = new List<int>(){0,1,2,3,4,5,6};
+
             for (int i = 0; teams.Count > 6; i++)
             {
                 i = randomize.Next(0, teams.Count);
                 randomTeams.Add(teams.ElementAt(i));
                 teams.RemoveAt(i);
+
+                for (int j = 0; j < 2; j++)
+                {
+                    j = randomize.Next(0, goal.Count);
+                    randomTeams.Add(teams.ElementAt(j));      
+                }
             }
             return randomTeams;
         }    
