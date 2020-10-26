@@ -20,10 +20,13 @@ namespace Domain
         public int OwnGoals { get; set; } = 0;
         public int PercentageOfUse { get; set; } = 0;
 
-        public Team(string name, int goals)
+        public Team(string name)
         {
             Name = name;
-            GoalsFor = goals;
+        }
+        public Team()
+        {
+            
         }
 
         public bool AddPlayers(List<Player> Players)

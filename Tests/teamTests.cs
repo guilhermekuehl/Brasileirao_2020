@@ -10,7 +10,7 @@ namespace Tests
           [Fact]
           public void Should_return_true_when_have_more_of_16_players()
           {
-               var atletico = new Team("Atlético", 5);
+               var atletico = new Team("Atlético");
 
                var gallardo = new Player(Guid.NewGuid(), "Thiago Gallardo", 0);
                var valdivia = new Player(Guid.NewGuid(), "Valdívia Amorim", 0);
@@ -50,7 +50,7 @@ namespace Tests
           [Fact]
           public void Should_return_false_when_have_minus_of_16_players()
           {
-               var flamengo = new Team("Flamengo", 3);
+               var flamengo = new Team("Flamengo");
 
                var gallardo = new Player(Guid.NewGuid(), "Thiago Gallardo", 1);
                var valdivia = new Player(Guid.NewGuid(), "Valdívia Amorim", 1);
@@ -76,7 +76,7 @@ namespace Tests
           [Fact]
           public void Should_return_true_when_remove_more_of_15_players_and_minus_of_33_players()
           {
-               var flamengo = new Team("Flamengo", 4);
+               var flamengo = new Team("Flamengo");
 
                var gallardo = new Player(Guid.NewGuid(), "Thiago Gallardo", 0);
                var valdivia = new Player(Guid.NewGuid(), "Valdívia Amorim", 0);
@@ -112,7 +112,7 @@ namespace Tests
           [Fact]
           public void Should_return_false_when_remove_minus_of_15_players()
           {
-               var flamengo = new Team("Flamengo", 3);
+               var flamengo = new Team("Flamengo");
 
                var gallardo = new Player(Guid.NewGuid(), "Thiago Gallardo", 0);
                var valdivia = new Player(Guid.NewGuid(), "Valdívia Amorim", 2);
