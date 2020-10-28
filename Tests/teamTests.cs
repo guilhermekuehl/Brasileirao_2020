@@ -12,28 +12,28 @@ namespace Tests
           {
                var atletico = new Team("Atlético");
 
-               var gallardo = new Player(Guid.NewGuid(), "Thiago Gallardo", 0);
-               var valdivia = new Player(Guid.NewGuid(), "Valdívia Amorim", 0);
-               var luan = new Player(Guid.NewGuid(), "Luan Santos", 0);
-               var dudu = new Player(Guid.NewGuid(), "Eduardo Ramos", 0);
-               var neymar = new Player(Guid.NewGuid(), "Neymar Jr.", 0);
-               var gabigol = new Player(Guid.NewGuid(), "Gabriel Lanzoni", 2);
-               var marcos = new Player(Guid.NewGuid(), "Marcos Augustini", 0);
-               var adrian = new Player(Guid.NewGuid(), "Adrian Silva", 0);
-               var pablo = new Player(Guid.NewGuid(), "Pablo Lima", 1);
-               var lucas = new Player(Guid.NewGuid(), "Lucas Stille", 1);
-               var thiago = new Player(Guid.NewGuid(), "Thiago Moraes", 0);
-               var carlos = new Player(Guid.NewGuid(), "Carlos Henrique", 0);
-               var julio = new Player(Guid.NewGuid(),"Julio Garcia", 0);
-               var martins = new Player(Guid.NewGuid(),"Martins Antony", 0);
-               var caio = new Player(Guid.NewGuid(), "Caio dos Santos", 0);
-               var manoel = new Player(Guid.NewGuid(), "Manoel Lima", 0);
-               var gabriel = new Player(Guid.NewGuid(), "Gabriel Olveira", 0);
-               var antonio = new Player(Guid.NewGuid(), "Antonio Nunes ", 0);
-               var yuri = new Player(Guid.NewGuid(), "Yuri Martins", 0);
-               var alisson = new Player(Guid.NewGuid(),"Alisson Ribeiro", 1);
-               var marlon = new Player(Guid.NewGuid(), "Marlon Floriani", 0);
-               var amaral = new Player(Guid.NewGuid(), "Amaral Batista", 0);
+               var gallardo = new Player("Thiago Gallardo");
+               var valdivia = new Player("Valdívia Amorim");
+               var luan = new Player("Luan Santos");
+               var dudu = new Player("Eduardo Ramos");
+               var neymar = new Player("Neymar Jr.");
+               var gabigol = new Player("Gabriel Lanzoni");
+               var marcos = new Player("Marcos Augustini");
+               var adrian = new Player("Adrian Silva");
+               var pablo = new Player("Pablo Lima");
+               var lucas = new Player("Lucas Stille");
+               var thiago = new Player("Thiago Moraes");
+               var carlos = new Player("Carlos Henrique");
+               var julio = new Player("Julio Garcia");
+               var martins = new Player("Martins Antony");
+               var caio = new Player("Caio dos Santos");
+               var manoel = new Player("Manoel Lima");
+               var gabriel = new Player("Gabriel Olveira");
+               var antonio = new Player("Antonio Nunes ");
+               var yuri = new Player("Yuri Martins");
+               var alisson = new Player("Alisson Ribeiro");
+               var marlon = new Player("Marlon Floriani");
+               var amaral = new Player("Amaral Batista");
 
                
                var _players = new List<Player>(){gallardo, valdivia, luan, dudu, neymar, gabigol, marcos, adrian, pablo, lucas, thiago, carlos,
@@ -52,17 +52,17 @@ namespace Tests
           {
                var flamengo = new Team("Flamengo");
 
-               var gallardo = new Player(Guid.NewGuid(), "Thiago Gallardo", 1);
-               var valdivia = new Player(Guid.NewGuid(), "Valdívia Amorim", 1);
-               var luan = new Player(Guid.NewGuid(), "Luan Santos", 0);
-               var dudu = new Player(Guid.NewGuid(), "Eduardo Ramos", 0);
-               var neymar = new Player(Guid.NewGuid(), "Neymar Jr.", 0);
-               var gabigol = new Player(Guid.NewGuid(), "Gabriel Lanzoni", 0);
-               var marcos = new Player(Guid.NewGuid(), "Marcos Augustini", 0);
-               var adrian = new Player(Guid.NewGuid(), "Adrian Silva", 0);
-               var pablo = new Player(Guid.NewGuid(), "Pablo Lima", 0);
-               var lucas = new Player(Guid.NewGuid(), "Lucas Stille", 0);
-               var amaral = new Player(Guid.NewGuid(), "Amaral Batista", 1);
+               var gallardo = new Player("Thiago Gallardo");
+               var valdivia = new Player("Valdívia Amorim");
+               var luan = new Player("Luan Santos");
+               var dudu = new Player("Eduardo Ramos");
+               var neymar = new Player("Neymar Jr.");
+               var gabigol = new Player("Gabriel Lanzoni");
+               var marcos = new Player("Marcos Augustini");
+               var adrian = new Player("Adrian Silva");
+               var pablo = new Player("Pablo Lima");
+               var lucas = new Player("Lucas Stille");
+               var amaral = new Player("Amaral Batista");
 
                var _players = new List<Player>(){gallardo, valdivia, luan, dudu, neymar, gabigol, marcos, adrian, pablo, lucas, amaral };
                
@@ -78,27 +78,27 @@ namespace Tests
           {
                var flamengo = new Team("Flamengo");
 
-               var gallardo = new Player(Guid.NewGuid(), "Thiago Gallardo", 0);
-               var valdivia = new Player(Guid.NewGuid(), "Valdívia Amorim", 0);
-               var luan = new Player(Guid.NewGuid(), "Luan Santos", 0);
-               var dudu = new Player(Guid.NewGuid(), "Eduardo Ramos", 0);
-               var neymar = new Player(Guid.NewGuid(), "Neymar Jr.", 0);
-               var gabigol = new Player(Guid.NewGuid(), "Gabriel Lanzoni", 0);
-               var marcos = new Player(Guid.NewGuid(), "Marcos Augustini", 0);
-               var adrian = new Player(Guid.NewGuid(), "Adrian Silva", 0);
-               var pablo = new Player(Guid.NewGuid(), "Pablo Lima", 1);
-               var lucas = new Player(Guid.NewGuid(), "Lucas Stille", 1);
-               var thiago = new Player(Guid.NewGuid(), "Thiago Moraes", 0);
-               var carlos = new Player(Guid.NewGuid(), "Carlos Henrique", 0);
-               var julio = new Player(Guid.NewGuid(),"Julio Garcia", 0);
-               var martins = new Player(Guid.NewGuid(),"Martins Antony", 0);
-               var caio = new Player(Guid.NewGuid(), "Caio dos Santos", 1);
-               var manoel = new Player(Guid.NewGuid(), "Manoel Lima", 0);
-               var gabriel = new Player(Guid.NewGuid(), "Gabriel Olveira", 0);
-               var antonio = new Player(Guid.NewGuid(), "Antonio Nunes ", 0);
-               var yuri = new Player(Guid.NewGuid(), "Yuri Martins", 0);
-               var alisson = new Player(Guid.NewGuid(),"Alisson Ribeiro", 1);
-               var marlon = new Player(Guid.NewGuid(), "Marlon Floriani", 0);
+               var gallardo = new Player("Thiago Gallardo");
+               var valdivia = new Player("Valdívia Amorim");
+               var luan = new Player("Luan Santos");
+               var dudu = new Player("Eduardo Ramos");
+               var neymar = new Player("Neymar Jr.");
+               var gabigol = new Player("Gabriel Lanzoni");
+               var marcos = new Player("Marcos Augustini");
+               var adrian = new Player("Adrian Silva");
+               var pablo = new Player("Pablo Lima");
+               var lucas = new Player("Lucas Stille");
+               var thiago = new Player("Thiago Moraes");
+               var carlos = new Player("Carlos Henrique");
+               var julio = new Player("Julio Garcia");
+               var martins = new Player("Martins Antony");
+               var caio = new Player("Caio dos Santos");
+               var manoel = new Player("Manoel Lima");
+               var gabriel = new Player("Gabriel Olveira");
+               var antonio = new Player("Antonio Nunes ");
+               var yuri = new Player("Yuri Martins");
+               var alisson = new Player("Alisson Ribeiro");
+               var marlon = new Player("Marlon Floriani");
 
                var _players = new List<Player>(){gallardo, valdivia, luan, dudu, neymar, gabigol, marcos, adrian, pablo, lucas, thiago, carlos,
                julio, martins, caio, manoel, gabriel, antonio, yuri, alisson, marlon};
@@ -114,14 +114,14 @@ namespace Tests
           {
                var flamengo = new Team("Flamengo");
 
-               var gallardo = new Player(Guid.NewGuid(), "Thiago Gallardo", 0);
-               var valdivia = new Player(Guid.NewGuid(), "Valdívia Amorim", 2);
-               var luan = new Player(Guid.NewGuid(), "Luan Santos", 1);
-               var dudu = new Player(Guid.NewGuid(), "Eduardo Ramos", 0);
-               var neymar = new Player(Guid.NewGuid(), "Neymar Jr.", 0);
-               var gabigol = new Player(Guid.NewGuid(), "Gabriel Lanzoni", 0);
-               var marcos = new Player(Guid.NewGuid(), "Marcos Augustini", 0);
-               var adrian = new Player(Guid.NewGuid(), "Adrian Silva", 0);
+               var gallardo = new Player("Thiago Gallardo");
+               var valdivia = new Player("Valdívia Amorim");
+               var luan = new Player("Luan Santos");
+               var dudu = new Player("Eduardo Ramos");
+               var neymar = new Player("Neymar Jr.");
+               var gabigol = new Player("Gabriel Lanzoni");
+               var marcos = new Player("Marcos Augustini");
+               var adrian = new Player("Adrian Silva");
 
                var _players = new List<Player>(){gallardo, valdivia, luan, dudu, neymar, gabigol, marcos, adrian};
                

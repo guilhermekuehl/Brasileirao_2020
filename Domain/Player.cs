@@ -8,11 +8,15 @@ namespace Domain{
         public Guid Id { get; set; } = Guid.NewGuid();
         public string Name { get; set; }
         public int Goals { get; set; }
+        public bool TopScorer { get; set; } = false;
 
-        public Player(Guid id, string name, int goals)
+        public Player (string name)
         {
             Name = name;
-            Goals = goals;
+        }
+        public Player(bool topScorer)
+        {
+            TopScorer = topScorer;
         }
     }
 }   

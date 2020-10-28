@@ -18,13 +18,13 @@ namespace Tests
          Assert.Equal(2, randomized.Count);
       }
 
-       [Fact]
-      public void Should_return_when_have_2_teams_in_conflit()
-      {
-         var brasileirao = new Brasileirao2020();
-         var teams = new List<Team>{};
-         var randomized = brasileirao.RandomGeneratorTeams();
-           
-      }
+      //  [Fact]
+      // public void Should_return_when_have_2_teams_in_conflit()
+      // {
+      //    var brasileirao = new Brasileirao2020();
+      //    var randomized = brasileirao.RandomGeneratorTeams();
+         
+      //    Assert.Equal(randomized.);
+      // }
    }
 }
