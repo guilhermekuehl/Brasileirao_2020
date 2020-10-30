@@ -12,7 +12,7 @@ Ex.: Objeto torcedor(set privado) e objeto CBF(publico)
 
 R3. Os times que farão parte do campeonato devem ser cadastrados, após o
 cadastro não será possível modificar os clubes participantes, a quantidade
-de clubes cadastrados deve ser maior que 7. (CBF)
+de clubes cadastrados deve ser maior que 7. (CBF).
 
 R4. O campeonato deve gerar automaticamente os confrontos entre os
 times.
@@ -23,16 +23,16 @@ jogos sejam informados, rodada por rodada. (CBF)
 
 R6. Cada time pode remover ou adicionar jogadores durante o decorrer do
 campeonato, tendo um limite mínimo e máximo de, respectivamente, 16 e
-32 jogadores. (CBF)
+32 jogadores. (CBF).
 
 R7. O campeonato deve apresentar a tabela atualizada da pontuação dos
 clubes, contendo os seguintes dados: Pontuação; Partidas disputadas;
 Vitórias; Empates; Derrotas; Saldo de gols; Gols pró; Gols contra;
-Porcentagem de aproveitamento (Torcedor)
+Porcentagem de aproveitamento (Torcedor).
 
-R8. O campeonato deve apresentar as relações dos artilheiros. (Torcedor)
+R8. O campeonato deve apresentar as relações dos artilheiros. (Torcedor).
 
-R9. O campeonato deve fornecer os resultados de cada rodada (Torcedor)
+R9. O campeonato deve fornecer os resultados de cada rodada (Torcedor).
 
 R10. O campeonato deve apresentar a relação dos times rebaixados (4
-últimos) e classificados para a libertadores (4 primeiros) (Torcedor)
+últimos) e classificados para a libertadores (4 primeiros) (Torcedor).  

@@ -13,12 +13,12 @@ namespace Domain
         public IReadOnlyCollection<Player> Players => _players;
 
 
-        private List<Team> _teams { get; set; }
-        public IReadOnlyCollection<Team> Teams => _teams;
+        private List<(Team name, int goals)> _teams { get; set; }
+        public IReadOnlyCollection<(Team name, int goals)> Teams => _teams;
 
         public Brasileirao2020()
         {
-            _teams = new List<Team>();
+            _teams = new List<(Team name, int goals)>();
             
         }
 
@@ -44,7 +44,7 @@ namespace Domain
                 randomTeams.Add(teams.ElementAt(index));
                 goal[i] = randomize.Next(0, 7);
                 teams.RemoveAt(index);
-            }   
+            }
                   
             if (goal[0] > goal[1])
             {
@@ -114,33 +114,25 @@ namespace Domain
             var topScorerRank = new string[10];
 
             var randomPlayers = new List<(Player name, int goals)>();
-            var players = new List<(Player name, int goals)>(){gallardo, valdivia, luan, dudu, neymar, gabigol, marcos, adrian, pablo, lucas, thiago, carlos,
+            var _players = new List<(Player name, int goals)>(){gallardo, valdivia, luan, dudu, neymar, gabigol, marcos, adrian, pablo, lucas, thiago, carlos,
             julio, martins, caio, manoel, gabriel, antonio, yuri, alisson, marlon, amaral};
             var goal = new int[22];
 
 
             for (int i = 0; i < 22; i++)
             {
-                var index = randomize.Next(0, players.Count);
-                randomPlayers.Add(players.ElementAt(index));
+                var index = randomize.Next(0, _players.Count);
+                randomPlayers.Add(_players.ElementAt(index));
                 goal[i] = randomize.Next(0, 30);
             }
-            return players;
+            return _players;
         }
 
-        public List<(Player name, int goals)> ShowTableTopScorer()
+         public List<(Team name, int Punctuation)> TeamsRankDecided()
         {
-            var table = TopScorerDecided();
-
-            table.Sort();
-            return table;
+            var team = new List<(Team name, int Punctuation)>();
+            return team;
         }
-        public List<(Player name, int goals)> ShowTableOfTeams()
-        {
-            var table = TopScorerDecided();
-
-            table.Sort();
-            return table;
-        }
+      
     }
 }

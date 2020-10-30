@@ -24,9 +24,10 @@ namespace Domain
         {
             Name = name;
         }
-        public Team()
+        public Team(string name, int punctuation)
         {
-            
+            Name = name;
+            Punctuation = punctuation;
         }
 
         public bool AddPlayers(List<Player> Players)
