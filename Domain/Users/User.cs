@@ -1,5 +1,4 @@
 using System;
-using Domain.Users;
 
 namespace Domain.Users
 {

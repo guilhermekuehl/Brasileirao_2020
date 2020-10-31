@@ -128,11 +128,15 @@ namespace Domain
             return _players;
         }
 
-         public List<(Team name, int Punctuation)> TeamsRankDecided()
+        public List<(Team name, int Punctuation)> TeamsRankDecided()
         {
             var team = new List<(Team name, int Punctuation)>();
             return team;
         }
-      
+        // public List<Team> AddResults()
+        // {
+        //     var teamValues = new Team();
+        //     teamValues.PercentageOfUse = (teamValues.Wins - teamValues.Defeats) * teamValues.MatchesPlayed / 100; 
+        // }
     }
 }

@@ -30,6 +30,10 @@ namespace Domain
             Punctuation = punctuation;
         }
 
+        public Team()
+        {
+        }
+
         public bool AddPlayers(List<Player> Players)
         {
             if (Players.Count > 15 && Players.Count < 33)
