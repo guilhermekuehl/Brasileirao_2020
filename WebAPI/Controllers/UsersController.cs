@@ -1,32 +1,35 @@
-﻿using System.Collections.Generic;
-using Microsoft.AspNetCore.Mvc;
-using System;
+﻿using Microsoft.AspNetCore.Mvc;
 using Domain.Users;
 
-namespace WebAPI.Controllers.UsersController
+namespace WebAPI.Controllers.Users
 {
     [ApiController]
     [Route("[controller]")]
     public class UsersController : ControllerBase
     {
-        public readonly UsersService _usersService;
+        private readonly UsersService _usersService;
+        
         public UsersController()
         {
             _usersService = new UsersService();
         }
+
         [HttpPost]
         public IActionResult Create(CreateUserRequest request)
         {
-            if (request.Profile == Profile.CBF && request.Password != "admin123")
+            if(request.Profile == Profile.CBF && request.Password != "admin123")
             {
                 return Unauthorized();
             }
+            
+            var response = _usersService.Create(request.Name, request.Profile);
 
-            BadRequest("Invalid name!");
-
-            var userId = _usersService.Create(request.Name, request.Profile);
-
-            return Ok(userId);
+            if (!response.IsValid)
+            {
+                return BadRequest(response.Errors);
+            }
+            
+            return Ok(response.Id);
         }
     }
 }
