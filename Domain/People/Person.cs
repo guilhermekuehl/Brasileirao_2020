@@ -1,7 +1,12 @@
+using System.Linq;
+using Domain.Entities;
+
 namespace Domain.People
 {
-    public class People
+    public abstract class Person : Entity
     {
+        public string Name { get; protected set; }
+
         private bool ValidateName()
         {
             if (string.IsNullOrEmpty(Name))

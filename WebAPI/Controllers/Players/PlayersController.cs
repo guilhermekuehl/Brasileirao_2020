@@ -3,7 +3,6 @@ using Domain.Players;
 using Microsoft.Extensions.Primitives;
 using Domain.Users;
 using System;
-using Microsoft.AspNetCore.Authentication;
 
 namespace WebAPI.Controllers.Players
 {
@@ -38,8 +37,7 @@ namespace WebAPI.Controllers.Players
 
             if (user.Profile == Profile.Supporter)
             {
-                return Unauthorized();
-                // return Forbid("Test");
+                return StatusCode(403, "User is not CBF");
             }
 
             var response = _playersService.Create(request.Name);
